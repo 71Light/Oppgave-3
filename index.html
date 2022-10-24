@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="nb">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        a{
+            font-size: 2rem;
+            color: rgb(135, 0, 0);
+            font-weight: bold;
+            text-align: center;
+        }
+        .nyheter{
+            margin-right: auto;
+            margin-left: auto;
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            max-width: 50rem;
+            grid-auto-rows: minmax(8rem, auto);
+            gap: 1rem;
+        }
+        .nyheter a{
+            background-color: rgba(238, 238, 238, 0.207);
+        }
+        .tre-kolonner{
+            grid-column: span 3;
+        }
+        .to-rader{
+            grid-row: span 2;
+        }
+        .seks-kolonner{
+            grid-column: span 6;
+        }
+        .fire-rader{
+            grid-row: span 4;
+        }
+        .bilde1{
+            background-image:url(bilder/biff.jpg);
+            background-size: 140%;
+        }
+        .bilde2{
+            background-image:url(bilder/svin.jpg);
+            background-size: 110%;
+        }
+        .bilde3{
+            background-image:url(bilder/sushi.jpg);
+            background-size: 110%;
+        }
+        .bilde4{
+            background-image:url(bilder/lasagne.jpg);
+            background-size: 110%;
+        }
+        .bilde5{
+            background-image:url(bilder/fisk.jpg);
+            background-size: 120%;
+        }
+        div{
+            text-align: center;
+            border: 3px solid black;
+        }
+        p{
+            font-size: 1rem;
+            color: rgb(135, 0, 0);
+            background-color: rgba(238, 238, 238, 0.207);
+        }
+        .reservasjon{
+            margin: 5rem;
+            margin-left: 40rem;
+            margin-right: 40rem;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Restaurant</h1>
+<section class="nyheter">
+    <div class="seks-kolonner fire-rader bilde1">
+    </div>
+    <div class="tre-kolonner to-rader bilde2">
+    </div>
+    <div class="tre-kolonner to-rader bilde3">
+    </div>
+    <div class="tre-kolonner to-rader bilde4">
+    </div>
+    <div class="tre-kolonner to-rader bilde5">
+    </div>
+</section>
+<div class="reservasjon">
+    <a href="reservasjoner.html">Reserver bord</a>
+</div>
+</body>
+</html>
